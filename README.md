@@ -27,7 +27,7 @@ and schema documentation.
 
 ```
 ML_Network_Intrusion_Detection/
-├── app.py                              ← Streamlit dashboard (frontend)
+├── Meemansa_Sharma__ML_Network_Intrusion_Detection.py  ← Streamlit dashboard (frontend)
 ├── data/
 │   ├── README.md                       ← download + placement instructions
 │   ├── UNSW_NB15_training-set.csv      ← place here (not committed)
@@ -68,7 +68,7 @@ ML_Network_Intrusion_Detection/
 
 ## Streamlit Dashboard
 
-The project includes an interactive web dashboard ([`app.py`](app.py)) built with
+The project includes an interactive web dashboard ([`Meemansa_Sharma__ML_Network_Intrusion_Detection.py`](Meemansa_Sharma__ML_Network_Intrusion_Detection.py)) built with
 [Streamlit](https://streamlit.io/). It displays all saved results — metrics, charts,
 and feature-importance data — and lets you run batch predictions using the pre-trained
 Random Forest pipeline, all without retraining anything.
@@ -80,7 +80,7 @@ Random Forest pipeline, all without retraining anything.
 .venv\Scripts\python.exe -m pip install streamlit pillow
 
 # Run the dashboard
-.venv\Scripts\python.exe -m streamlit run app.py
+.venv\Scripts\python.exe -m streamlit run Meemansa_Sharma__ML_Network_Intrusion_Detection.py
 ```
 
 Open **http://localhost:8501** in your browser.
@@ -324,7 +324,7 @@ not causal relationships with attack activity.
 
 | File | Description |
 |---|---|
-| `app.py` | Streamlit web dashboard (frontend) |
+| `Meemansa_Sharma__ML_Network_Intrusion_Detection.py` | Streamlit web dashboard (frontend) |
 | `notebooks/01_exploratory_data_analysis.ipynb` | Phase 2 EDA notebook |
 | `notebooks/02_model_training_and_evaluation.ipynb` | Phase 4–5 results notebook |
 | `requirements.txt` | Project dependencies (includes `streamlit`, `pillow`) |

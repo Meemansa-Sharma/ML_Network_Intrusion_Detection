@@ -340,7 +340,7 @@ def main():
     # ------------------------------------------------------------------ #
     doc.add_heading("9. Streamlit Web Dashboard", 1)
     add_para(doc,
-        "A Streamlit-based interactive web dashboard (app.py) was developed as the project's "
+        "A Streamlit-based interactive web dashboard (Meemansa_Sharma__ML_Network_Intrusion_Detection.py) was developed as the project's "
         "frontend layer. It reads all pre-computed results — saved model pipelines, JSON/CSV "
         "metrics, and PNG figures — and presents them through a clean, dark-themed cybersecurity "
         "interface. No model training or fitting takes place within the dashboard."
@@ -352,7 +352,7 @@ def main():
         "environment. It applies a dark navy/charcoal theme with blue/cyan accents to match the "
         "cybersecurity context. Metric cards, interactive tables, and embedded PNG charts are used "
         "throughout. The app is launched locally via: "
-        ".venv\\Scripts\\python.exe -m streamlit run app.py "
+        ".venv\\Scripts\\python.exe -m streamlit run Meemansa_Sharma__ML_Network_Intrusion_Detection.py "
         "(accessible at http://localhost:8501). No external APIs, cloud services, or internet "
         "access are required at runtime."
     )

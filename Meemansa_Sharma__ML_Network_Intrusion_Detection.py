@@ -1,11 +1,13 @@
 """
-app.py — Streamlit dashboard for the ML Network Intrusion Detection project.
+Meemansa_Sharma__ML_Network_Intrusion_Detection.py
+===================================================
+Streamlit dashboard for the ML Network Intrusion Detection project.
 
 This file is the ONLY frontend file.  It reads saved results, metrics, and
 the trained Random Forest pipeline.  It never calls .fit() or retrains anything.
 
 Run with:
-    .venv\\Scripts\\python.exe -m streamlit run app.py
+    .venv\\Scripts\\python.exe -m streamlit run Meemansa_Sharma__ML_Network_Intrusion_Detection.py
 """
 
 from __future__ import annotations
