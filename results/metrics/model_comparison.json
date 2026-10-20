@@ -1,0 +1,53 @@
+{
+  "DummyClassifier": {
+    "accuracy": 0.5506,
+    "attack_recall": 1.0,
+    "attack_precision": 0.5506,
+    "attack_f1": 0.7102,
+    "normal_recall": 0.0,
+    "normal_precision": 0.0,
+    "macro_f1": 0.3551,
+    "weighted_f1": 0.391,
+    "tn": 0,
+    "fp": 37000,
+    "fn": 0,
+    "tp": 45332,
+    "train_time_s": 1.805,
+    "predict_time_s": 0.245,
+    "roc_auc": 0.5
+  },
+  "LogisticRegression": {
+    "accuracy": 0.8089,
+    "attack_recall": 0.9724,
+    "attack_precision": 0.7527,
+    "attack_f1": 0.8486,
+    "normal_recall": 0.6086,
+    "normal_precision": 0.9473,
+    "macro_f1": 0.7948,
+    "weighted_f1": 0.8003,
+    "tn": 22519,
+    "fp": 14481,
+    "fn": 1253,
+    "tp": 44079,
+    "train_time_s": 9.475,
+    "predict_time_s": 0.254,
+    "roc_auc": 0.9551
+  },
+  "RandomForest": {
+    "accuracy": 0.8726,
+    "attack_recall": 0.9858,
+    "attack_precision": 0.8194,
+    "attack_f1": 0.8949,
+    "normal_recall": 0.7338,
+    "normal_precision": 0.9769,
+    "macro_f1": 0.8665,
+    "weighted_f1": 0.8694,
+    "tn": 27150,
+    "fp": 9850,
+    "fn": 642,
+    "tp": 44690,
+    "train_time_s": 8.744,
+    "predict_time_s": 0.543,
+    "roc_auc": 0.9789
+  }
+}

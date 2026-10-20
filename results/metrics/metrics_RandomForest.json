@@ -1,0 +1,33 @@
+{
+  "model": "RandomForest",
+  "n_test_samples": 82332,
+  "accuracy": 0.8725647378904922,
+  "precision_class0": 0.9768998272884283,
+  "recall_class0": 0.7337837837837838,
+  "f1_class0": 0.8380664279540684,
+  "precision_class1": 0.8193986065273194,
+  "recall_class1": 0.9858378187593753,
+  "f1_class1": 0.8949455302787568,
+  "macro_f1": 0.8665059791164126,
+  "weighted_f1": 0.8693840622467222,
+  "confusion_matrix": [
+    [
+      27150,
+      9850
+    ],
+    [
+      642,
+      44690
+    ]
+  ],
+  "tn": 27150,
+  "fp": 9850,
+  "fn": 642,
+  "tp": 44690,
+  "predict_time_s": 0.5426519000029657,
+  "intrusion_detection_notes": {
+    "false_negative_meaning": "FN = attack predicted as normal. This attack goes undetected \u2014 the most dangerous outcome.",
+    "false_positive_meaning": "FP = normal predicted as attack. An analyst is alerted unnecessarily \u2014 causes alert fatigue."
+  },
+  "train_time_s": 8.744
+}

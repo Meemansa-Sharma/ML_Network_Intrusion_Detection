@@ -1,0 +1,163 @@
+{
+  "generated_by": "notebooks/01_exploratory_data_analysis.ipynb",
+  "dataset": "UNSW-NB15 (official predefined split)",
+  "train": {
+    "rows": 175341,
+    "columns": 45,
+    "numeric_feature_count": 39,
+    "categorical_feature_count": 3,
+    "class_distribution": {
+      "split": "train",
+      "total": 175341,
+      "normal_count": 56000,
+      "attack_count": 119341,
+      "normal_pct": 31.94,
+      "attack_pct": 68.06
+    },
+    "duplicate_rows": 0,
+    "duplicate_ids": 0,
+    "missing_total": 0,
+    "attack_categories": [
+      {
+        "attack_cat": "Normal",
+        "count": 56000,
+        "pct": 31.94
+      },
+      {
+        "attack_cat": "Generic",
+        "count": 40000,
+        "pct": 22.81
+      },
+      {
+        "attack_cat": "Exploits",
+        "count": 33393,
+        "pct": 19.04
+      },
+      {
+        "attack_cat": "Fuzzers",
+        "count": 18184,
+        "pct": 10.37
+      },
+      {
+        "attack_cat": "DoS",
+        "count": 12264,
+        "pct": 6.99
+      },
+      {
+        "attack_cat": "Reconnaissance",
+        "count": 10491,
+        "pct": 5.98
+      },
+      {
+        "attack_cat": "Analysis",
+        "count": 2000,
+        "pct": 1.14
+      },
+      {
+        "attack_cat": "Backdoor",
+        "count": 1746,
+        "pct": 1.0
+      },
+      {
+        "attack_cat": "Shellcode",
+        "count": 1133,
+        "pct": 0.65
+      },
+      {
+        "attack_cat": "Worms",
+        "count": 130,
+        "pct": 0.07
+      }
+    ]
+  },
+  "test": {
+    "rows": 82332,
+    "columns": 45,
+    "class_distribution": {
+      "split": "test",
+      "total": 82332,
+      "normal_count": 37000,
+      "attack_count": 45332,
+      "normal_pct": 44.94,
+      "attack_pct": 55.06
+    },
+    "duplicate_rows": 0,
+    "duplicate_ids": 0,
+    "missing_total": 0,
+    "attack_categories": [
+      {
+        "attack_cat": "Normal",
+        "count": 37000,
+        "pct": 44.94
+      },
+      {
+        "attack_cat": "Generic",
+        "count": 18871,
+        "pct": 22.92
+      },
+      {
+        "attack_cat": "Exploits",
+        "count": 11132,
+        "pct": 13.52
+      },
+      {
+        "attack_cat": "Fuzzers",
+        "count": 6062,
+        "pct": 7.36
+      },
+      {
+        "attack_cat": "DoS",
+        "count": 4089,
+        "pct": 4.97
+      },
+      {
+        "attack_cat": "Reconnaissance",
+        "count": 3496,
+        "pct": 4.25
+      },
+      {
+        "attack_cat": "Analysis",
+        "count": 677,
+        "pct": 0.82
+      },
+      {
+        "attack_cat": "Backdoor",
+        "count": 583,
+        "pct": 0.71
+      },
+      {
+        "attack_cat": "Shellcode",
+        "count": 378,
+        "pct": 0.46
+      },
+      {
+        "attack_cat": "Worms",
+        "count": 44,
+        "pct": 0.05
+      }
+    ]
+  },
+  "id_column_analysis": {
+    "train_id_min": 1,
+    "train_id_max": 175341,
+    "train_id_unique": 175341,
+    "test_id_min": 1,
+    "test_id_max": 82332,
+    "test_id_unique": 82332,
+    "id_overlap_count": 82332,
+    "recommendation": "The 'id' column is a row-level identifier assigned during dataset construction.  It carries no network-flow information and its numeric range overlaps between train and test splits (both use 1-based sequential integers), so any correlation with 'label' would be a dataset artifact, not a real signal.  'id' must be excluded from all model feature sets."
+  },
+  "columns_excluded_from_features": {
+    "label": "Binary target \u2014 not a feature.",
+    "attack_cat": "Reveals attack category; leaks outcome information.",
+    "id": "Row identifier; no predictive signal; overlaps between splits."
+  },
+  "figures": {
+    "class_distribution": "results/figures/class_distribution_both_splits.png",
+    "numeric_distributions": "results/figures/numeric_distributions_train.png",
+    "categorical_frequencies": "results/figures/categorical_frequencies_train.png",
+    "correlation_heatmap": "results/figures/correlation_heatmap_train.png",
+    "attack_cat_train": "results/figures/attack_category_distribution_train.png",
+    "attack_cat_test": "results/figures/attack_category_distribution_test.png"
+  }
+}

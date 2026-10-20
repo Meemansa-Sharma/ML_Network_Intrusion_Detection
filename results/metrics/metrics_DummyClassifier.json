@@ -1,0 +1,33 @@
+{
+  "model": "DummyClassifier",
+  "n_test_samples": 82332,
+  "accuracy": 0.5506000097167566,
+  "precision_class0": 0.0,
+  "recall_class0": 0.0,
+  "f1_class0": 0.0,
+  "precision_class1": 0.5506000097167566,
+  "recall_class1": 1.0,
+  "f1_class1": 0.710176713873919,
+  "macro_f1": 0.3550883569369595,
+  "weighted_f1": 0.391023305559594,
+  "confusion_matrix": [
+    [
+      0,
+      37000
+    ],
+    [
+      0,
+      45332
+    ]
+  ],
+  "tn": 0,
+  "fp": 37000,
+  "fn": 0,
+  "tp": 45332,
+  "predict_time_s": 0.24532250000629574,
+  "intrusion_detection_notes": {
+    "false_negative_meaning": "FN = attack predicted as normal. This attack goes undetected \u2014 the most dangerous outcome.",
+    "false_positive_meaning": "FP = normal predicted as attack. An analyst is alerted unnecessarily \u2014 causes alert fatigue."
+  },
+  "train_time_s": 1.805
+}

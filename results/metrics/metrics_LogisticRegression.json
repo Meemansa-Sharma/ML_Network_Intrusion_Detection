@@ -1,0 +1,33 @@
+{
+  "model": "LogisticRegression",
+  "n_test_samples": 82332,
+  "accuracy": 0.8088956906184716,
+  "precision_class0": 0.9472909305064782,
+  "recall_class0": 0.6086216216216216,
+  "f1_class0": 0.7410978740209307,
+  "precision_class1": 0.7527151639344263,
+  "recall_class1": 0.9723594811612106,
+  "f1_class1": 0.8485542678935818,
+  "macro_f1": 0.7948260709572563,
+  "weighted_f1": 0.80026336553134,
+  "confusion_matrix": [
+    [
+      22519,
+      14481
+    ],
+    [
+      1253,
+      44079
+    ]
+  ],
+  "tn": 22519,
+  "fp": 14481,
+  "fn": 1253,
+  "tp": 44079,
+  "predict_time_s": 0.254153200017754,
+  "intrusion_detection_notes": {
+    "false_negative_meaning": "FN = attack predicted as normal. This attack goes undetected \u2014 the most dangerous outcome.",
+    "false_positive_meaning": "FP = normal predicted as attack. An analyst is alerted unnecessarily \u2014 causes alert fatigue."
+  },
+  "train_time_s": 9.475
+}
